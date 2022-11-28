@@ -3,24 +3,103 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Paste It In</title>
+  <title>PSECT PROJECT</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <div class="bigDiv">
+    <div class="form" name="verify">
+      <div class="nittLogoDiv">
+        <img class="nittLogo" src="images/download.png">
+      </div>
+      <h3>Please insert the load values:</h1>
+        <div class="inputs">
+          <input id="1"  name="n1" value="0">
+          <input id="2" name="n2" value="0">
+          <input id="3" name="n3" value="0">
+          <input id="4" name="n4" value="0">
+          <input id="5" name="n5" value="0">
+          <input id="6" name="n6" value="0">
+          <input id="7" name="n7" value="0">
+          <input id="8" name="n8" value="0">
+          <input id="9" name="n9" value="0">
+          <input id="10" name="n10" value="0">
+          <input id="11" name="n11" value="0">
+          <input id="12" name="n12" value="0">
+          <input id="13" name="n13" value="0">
+          <input id="14" name="n14" value="0">
+          <input id="15" name="n15" value="0">
+          <input id="16" name="n16" value="0">
+          <input id="17" name="n17" value="0">
+          <input id="18" name="n18" value="0">
+          <input id="19" name="n19" value="0">
+          <input id="20" name="n20" value="0">
+          <input id="21" name="n21" value="0">
+          <input id="22" name="n22" value="0">
+          <input id="23" name="n23" value="0">
+          <input id="24" name="n24" value="0">
+        </div>
+        <hr>
+       
 
-  <form name="verify">
-    <div class="inputs">
-      <input type="text" name="n1" maxlength="1">
-      <input type="text" name="n2" maxlength="1">
-      <input type="text" name="n3" maxlength="1">
-      <input type="text" name="n4" maxlength="1">
-      <input type="text" name="n5" maxlength="1">
-      <input type="text" name="n6" maxlength="1">
+          <div class="file">
+           <input type="file" class="custom-file-upload" id="excel_file" name="files" size="60" />
+          </div>
+        
+   
+        <input  id="random" type="submit" value="Random" onclick="randomize()">
+        <hr>
+        <input  id="submit" type="submit" value="Submit" onclick="">
+      </div>
+      <div class="chartAndTableDiv">
+        <div id="chartDiv" style="width:90%; height:300px; margin:0 auto;">
+        </div>
+        
+        <hr>
+        
+        <table id="tbl_id" style="text-align:center" valign="top">
+          <thead>
+            <tr>
+            <th>S. No.</th>
+            <th>Unit No.</th>
+            <th>FLAPC</th>
+            <th>PMIN (MW)</th>
+            <th>PMAX (MW)</th>
+          </tr>
+          </thead>
+          <tbody>
+    
+          </tbody>
+        </table>
+
+
+        <hr>
+        <table id="generatorT_id" style="text-align:center" valign="top">
+          <thead>
+            <tr>
+            <th>Load at (24 hr)</th>
+            <th>gen 1 </th>
+            <th>gen 2</th>
+            <th>gen 3</th>
+            <th>gen 4</th>
+            
+            
+          </tr>
+          </thead>
+          <tbody>
+    
+          </tbody>
+        </table>
+      </div>
+      
+      
+      
     </div>
-    <input type="submit" value="Verify">
-  </form>
-  <script src="./index.js"></script>
+      <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+      
+      <script src="./index.js"></script>
+      
 </body>
 
 </html>
